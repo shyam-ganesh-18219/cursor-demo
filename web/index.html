@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Demo</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workshop Demo</h1>
+
+        <section class="login-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div id="loginResult" class="result"></div>
+        </section>
+
+        <section class="users-section">
+            <h2>Users</h2>
+            <div id="userList" class="user-list"></div>
+            <div class="pagination">
+                <button id="prevBtn" type="button">Prev</button>
+                <span id="pageInfo">Page 1</span>
+                <button id="nextBtn" type="button">Next</button>
+            </div>
+        </section>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>

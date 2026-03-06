@@ -65,6 +65,16 @@ find . -name "*.java" | xargs javac -cp . -d . && java WorkshopDebugRunner
 
 This runner intentionally triggers workshop bug paths so participants can collect logs/stack traces, fix code, and re-run to confirm behavior.
 
+### Web UI
+
+To run the web UI on localhost:
+
+```bash
+find . -name "*.java" | xargs javac -cp . -d . && java Main web
+```
+
+Then open [http://localhost:8080](http://localhost:8080) in your browser. The UI provides a login form and a paginated users list.
+
 ---
 
 ## Debugging Flow in Cursor
