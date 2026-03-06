@@ -4,6 +4,18 @@ Welcome to the AI Coding Workshop! Below are hands-on exercises designed to help
 
 ---
 
+## Before You Start – Run + Capture Logs
+
+From the project root, compile and run:
+
+```bash
+find . -name "*.java" | xargs javac -cp . -d . && java WorkshopDebugRunner
+```
+
+Use the output from this command as your baseline trace in Cursor chat before making fixes, then run it again after each fix to confirm results.
+
+---
+
 ## Exercise 1 – Codebase Exploration
 
 Use AI to understand how the project is structured and how authentication works.

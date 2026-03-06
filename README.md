@@ -54,8 +54,30 @@ No build tool is required for exploration.
 To compile all sources from the project root:
 
 ```bash
-find . -name "*.java" | xargs javac -cp .
+find . -name "*.java" | xargs javac -cp . -d .
 ```
+
+To run a local debug scenario from the project root:
+
+```bash
+find . -name "*.java" | xargs javac -cp . -d . && java WorkshopDebugRunner
+```
+
+This runner intentionally triggers workshop bug paths so participants can collect logs/stack traces, fix code, and re-run to confirm behavior.
+
+---
+
+## Debugging Flow in Cursor
+
+Use this sequence during the workshop:
+
+1. Compile and run:
+   ```bash
+   find . -name "*.java" | xargs javac -cp . -d . && java WorkshopDebugRunner
+   ```
+2. Copy the failure output (including stack trace) into Cursor chat for context.
+3. Open **Run and Debug** in Cursor, run `WorkshopDebugRunner`, and add breakpoints in the service methods.
+4. Apply the fix, then run the same command again to verify the output has improved.
 
 ---
 
