@@ -16,7 +16,7 @@ Use the output from this command as your baseline trace in Cursor chat before ma
 
 ---
 
-## Exercise 1 – Codebase Exploration
+## Exercise 1 – Codebase Exploration (CONTEXT) 
 
 Use AI to understand how the project is structured and how authentication works.
 
@@ -30,7 +30,7 @@ Use AI to understand how the project is structured and how authentication works.
 ---
 
 
-## Exercise 1.1 – Building rules in CUrsor
+## Exercise 1.1 – Building rules in Cursor (RULES)  
 
 **Task:** Build a rule in the cursor to make sure the generated code follows SOLID principles.
 
@@ -41,7 +41,7 @@ Create a rule in the cursor to strictly follow SOLID principles while generating
 
 ---
 
-## Exercise 2 – Feature Planning
+## Exercise 2 – Feature Planning (PLAN MODE) 
 
 Ask AI to help you plan a new feature before writing any code.
 
@@ -54,7 +54,7 @@ Plan how to add pagination to the users API
 
 ---
 
-## Exercise 3 – Feature Implementation
+## Exercise 3 – Feature Implementation (AGENT MODE) 
 
 Implement the pagination feature identified in Exercise 2.
 
@@ -66,7 +66,7 @@ Implement the pagination feature identified in Exercise 2.
 
 ---
 
-## Exercise 4 – Debugging Logic Bug
+## Exercise 4 – Debugging Logic Bug (DEBUG MODE) 
 
 There is a deliberate bug in `AuthService.login()` that causes login to fail for all valid users.
 
@@ -81,7 +81,7 @@ Debug why login fails for valid users in AuthService
 
 ---
 
-## Exercise 5 – Runtime Bug Detection
+## Exercise 5 – Runtime Bug Detection (DEBUG MODE) 
 
 There is a bug in `UserService.getUsernameById()` that can cause a `NullPointerException` at runtime.
 
