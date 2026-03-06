@@ -29,6 +29,18 @@ Use AI to understand how the project is structured and how authentication works.
 
 ---
 
+
+## Exercise 1.1 – Building rules in CUrsor
+
+**Task:** Build a rule in the cursor to make sure the generated code follows SOLID principles.
+
+**Prompt example:**
+```
+Create a rule in the cursor to strictly follow SOLID principles while generating code. 
+```
+
+---
+
 ## Exercise 2 – Feature Planning
 
 Ask AI to help you plan a new feature before writing any code.
@@ -77,9 +89,8 @@ There is a bug in `UserService.getUsernameById()` that can cause a `NullPointerE
 
 **Prompt example:**
 ```
-Analyze UserService for possible runtime errors
+Analyze codebase for possible runtime errors
 ```
 
 ---
-
 Happy coding! 🚀
