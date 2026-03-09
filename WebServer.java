@@ -62,22 +62,7 @@ public class WebServer {
             return;
         }
 
-        String query = exchange.getRequestURI().getQuery();
-        int page = 1;
-        int pageSize = 10;
-        if (query != null) {
-            for (String pair : query.split("&")) {
-                String[] kv = pair.split("=", 2);
-                if (kv.length == 2) {
-                    try {
-                        if ("page".equals(kv[0])) page = Integer.parseInt(kv[1]);
-                        else if ("pageSize".equals(kv[0])) pageSize = Integer.parseInt(kv[1]);
-                    } catch (NumberFormatException ignored) {}
-                }
-            }
-        }
-
-        List<User> users = userController.getUsers(page, pageSize);
+        List<User> users = userController.getUsers();
         StringBuilder sb = new StringBuilder("[");
         for (int i = 0; i < users.size(); i++) {
             if (i > 0) sb.append(",");
