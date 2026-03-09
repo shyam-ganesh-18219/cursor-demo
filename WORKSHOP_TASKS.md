@@ -9,7 +9,9 @@ Welcome to the AI Coding Workshop! Below are hands-on exercises designed to help
 From the project root, compile and run:
 
 ```bash
-find . -name "*.java" | xargs javac -cp . -d . && java WorkshopDebugRunner
+find . -name "*.java" | xargs javac -cp . -d . && java WorkshopDebugRunner 
+find . -name "*.java" | xargs javac -cp . -d .
+find . -name "*.java" | xargs javac -cp . -d . && java Main web
 ```
 
 Use the output from this command as your baseline trace in Cursor chat before making fixes, then run it again after each fix to confirm results.
